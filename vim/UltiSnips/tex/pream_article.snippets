@@ -1,0 +1,33 @@
+snippet pream_article "Article praeamble" b
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[12pt,a4paper]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+
+% MATH
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Билич Борис}
+
+\newtheorem{theorem}{Теорема}[subsection]
+\newtheorem{lemma}[theorem]{Лемма}
+\newtheorem{proposal}{Предложение}[theorem]
+\newtheorem{corollary}{Следствие}[theorem]
+\newtheorem*{remark}{Замечание}
+\newtheorem{definition}{Определение}
+
+\newcommand{\cmpl}{\mathbb{C}}
+
+
+\begin{document}
+${1:document}
+\end{document}
+endsnippet
