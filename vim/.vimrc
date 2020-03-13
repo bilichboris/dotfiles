@@ -1,3 +1,7 @@
+" First of all determine os
+let g:os = substitute(system('uname'), '\n', '', '')
+" Linux or Darwin
+
 
 " When started as "evim", evim.vim will already have done these settings, bail
 " out.
@@ -89,7 +93,11 @@ let g:UltiSnipsEnableSnipMate = 0
 "au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
 
 " Vimtex settings
-let g:vimtex_view_method = 'skim'
+if g:os == 'Darwin'
+    let g:vimtex_view_method = 'skim'
+else
+    let g:vimtex_view_method = 'zathura'
+endif
 let g:tex_flavor = 'latex'
 " Use local texdoc
 let g:vimtex_doc_handlers = ['MyHandler']
