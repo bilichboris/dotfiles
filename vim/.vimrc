@@ -57,6 +57,10 @@ if !has("gui_running")
     let g:ranger_replace_netrw = 1
 endif
 
+Plug 'dpelle/vim-languagetool'
+let g:languagetool_jar="/usr/local/Cellar/languagetool/5.1.3_1/libexec/languagetool-commandline.jar"
+let g:languagetool_lang="en-US"
+
 " LaTeX
 Plug 'lervag/vimtex'
 
