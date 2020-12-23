@@ -182,3 +182,5 @@ inoremap <silent><expr> <Tab>
             \ coc#refresh()
 
 inoremap <silent><expr> <c-n> coc#refresh()
+" The end
+
