@@ -34,6 +34,7 @@ set wildmode=longest:full,full " Command completion mode
 set ts=4 " Expand tab section
 set sw=4
 set et
+set mouse=a
 " Keymap
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
